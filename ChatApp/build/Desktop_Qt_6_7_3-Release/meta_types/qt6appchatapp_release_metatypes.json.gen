@@ -1,0 +1,165 @@
+[
+    {
+        "classes": [
+            {
+                "className": "ChatClient",
+                "methods": [
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "host",
+                                "type": "QString"
+                            },
+                            {
+                                "name": "port",
+                                "type": "quint16"
+                            }
+                        ],
+                        "name": "connectToServer",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "to",
+                                "type": "QString"
+                            },
+                            {
+                                "name": "content",
+                                "type": "QString"
+                            }
+                        ],
+                        "name": "sendMessage",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "action",
+                                "type": "QString"
+                            },
+                            {
+                                "name": "username",
+                                "type": "QString"
+                            },
+                            {
+                                "name": "password",
+                                "type": "QString"
+                            }
+                        ],
+                        "name": "authenticate",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "withUser",
+                                "type": "QString"
+                            }
+                        ],
+                        "name": "requestHistory",
+                        "returnType": "void"
+                    }
+                ],
+                "object": true,
+                "properties": [
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": true,
+                        "index": 0,
+                        "name": "messages",
+                        "notify": "messagesChanged",
+                        "read": "messages",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QStringList",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": true,
+                        "index": 1,
+                        "name": "users",
+                        "notify": "usersChanged",
+                        "read": "users",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QStringList",
+                        "user": false
+                    }
+                ],
+                "qualifiedClassName": "ChatClient",
+                "signals": [
+                    {
+                        "access": "public",
+                        "name": "messagesChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "usersChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "connectedToServer",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "disconnectedFromServer",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "success",
+                                "type": "bool"
+                            },
+                            {
+                                "name": "message",
+                                "type": "QString"
+                            }
+                        ],
+                        "name": "authenticationResult",
+                        "returnType": "void"
+                    }
+                ],
+                "slots": [
+                    {
+                        "access": "private",
+                        "name": "onConnected",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "private",
+                        "name": "onReadyRead",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "private",
+                        "name": "onDisconnected",
+                        "returnType": "void"
+                    }
+                ],
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QObject"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "chatclient.h",
+        "outputRevision": 68
+    }
+]

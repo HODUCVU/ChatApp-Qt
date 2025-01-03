@@ -1,0 +1,14 @@
+-rootPath
+/home/duc-vu/Documents/QtProjects/ChatApp
+-cmake-output
+-output-file
+/home/duc-vu/Documents/QtProjects/ChatApp/build/Desktop_Qt_6_7_3-Release/.qt/qml_imports/appChatApp_conf.cmake
+-importPath
+/home/duc-vu/Documents/QtProjects/ChatApp/build/Desktop_Qt_6_7_3-Release/ChatApp
+-importPath
+/home/duc-vu/Documents/QtProjects/ChatApp/build/Desktop_Qt_6_7_3-Release
+-importPath
+/home/duc-vu/Qt/6.7.3/gcc_64/qml
+-qrcFiles
+/home/duc-vu/Documents/QtProjects/ChatApp/build/Desktop_Qt_6_7_3-Release/.qt/rcc/qmake_ChatApp.qrc
+/home/duc-vu/Documents/QtProjects/ChatApp/build/Desktop_Qt_6_7_3-Release/.qt/rcc/appChatApp_raw_qml_0.qrc

@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="/qt/qml/ChatApp/">
+    <file alias="Main.qml">/home/duc-vu/Documents/QtProjects/ChatApp/Main.qml</file>
+  </qresource>
+</RCC>
+

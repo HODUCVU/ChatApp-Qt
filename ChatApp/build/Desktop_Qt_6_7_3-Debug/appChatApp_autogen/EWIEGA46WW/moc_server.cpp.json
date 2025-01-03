@@ -1,0 +1,43 @@
+{
+    "classes": [
+        {
+            "className": "Server",
+            "object": true,
+            "qualifiedClassName": "Server",
+            "signals": [
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "message",
+                            "type": "QString"
+                        }
+                    ],
+                    "name": "serverSide",
+                    "returnType": "void"
+                }
+            ],
+            "slots": [
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "message",
+                            "type": "QString"
+                        }
+                    ],
+                    "name": "printWhenEmit",
+                    "returnType": "void"
+                }
+            ],
+            "superClasses": [
+                {
+                    "access": "public",
+                    "name": "QObject"
+                }
+            ]
+        }
+    ],
+    "inputFile": "server.h",
+    "outputRevision": 68
+}

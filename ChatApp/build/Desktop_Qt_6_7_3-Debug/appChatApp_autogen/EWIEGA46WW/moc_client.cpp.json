@@ -1,0 +1,43 @@
+{
+    "classes": [
+        {
+            "className": "Client",
+            "object": true,
+            "qualifiedClassName": "Client",
+            "signals": [
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "message",
+                            "type": "QString"
+                        }
+                    ],
+                    "name": "clientSide",
+                    "returnType": "void"
+                }
+            ],
+            "slots": [
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "message",
+                            "type": "QString"
+                        }
+                    ],
+                    "name": "printWhenEmit",
+                    "returnType": "void"
+                }
+            ],
+            "superClasses": [
+                {
+                    "access": "public",
+                    "name": "QObject"
+                }
+            ]
+        }
+    ],
+    "inputFile": "client.h",
+    "outputRevision": 68
+}

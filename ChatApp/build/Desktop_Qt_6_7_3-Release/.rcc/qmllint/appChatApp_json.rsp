@@ -1,0 +1,12 @@
+--bare
+-I
+/home/duc-vu/Documents/QtProjects/ChatApp/build/Desktop_Qt_6_7_3-Release
+-I
+/home/duc-vu/Qt/6.7.3/gcc_64/qml
+--resource
+/home/duc-vu/Documents/QtProjects/ChatApp/build/Desktop_Qt_6_7_3-Release/.qt/rcc/qmake_ChatApp.qrc
+--resource
+/home/duc-vu/Documents/QtProjects/ChatApp/build/Desktop_Qt_6_7_3-Release/.qt/rcc/appChatApp_raw_qml_0.qrc
+/home/duc-vu/Documents/QtProjects/ChatApp/Main.qml
+--json
+/home/duc-vu/Documents/QtProjects/ChatApp/build/Desktop_Qt_6_7_3-Release/appChatApp_qmllint.json
