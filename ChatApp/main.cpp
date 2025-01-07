@@ -8,7 +8,7 @@ int main(int argc, char *argv[])
     QGuiApplication app(argc, argv);
 
     ChatClient client;
-    client.connectToServer("192.168.19.24", 1234);
+    client.connectToServer("192.168.43.156", 1234);
     QQmlApplicationEngine engine;
     QQmlContext *context = engine.rootContext();
     context->setContextProperty("chatClient", &client);
