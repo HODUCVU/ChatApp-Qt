@@ -158,7 +158,7 @@ ApplicationWindow {
                                 onClicked: {
                                     if (messageInput.text !== "") {
                                         chatClient.sendMessage(chatArea.recipient, messageInput.text)
-                                        chatHistory.text += "\nMe: " + messageInput.text
+                                        // chatHistory.text += "\nMe: " + messageInput.text
                                         messageInput.text = ""
                                     }
                                 }

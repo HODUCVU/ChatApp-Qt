@@ -79,8 +79,10 @@ void ChatServer::incomingConnection(qintptr socketDescriptor)
         info.socket = clientSocket;
         info.username = "Unknown";
         clients.insert(clientSocket, info);
-        connect(clientSocket, &QTcpSocket::readyRead, this, &ChatServer::onReadyRead);
-        connect(clientSocket, &QTcpSocket::disconnected, this, &ChatServer::onDisconnected);
+        // connect(clientSocket, &QTcpSocket::readyRead, this, &ChatServer::onReadyRead);
+        // connect(clientSocket, &QTcpSocket::disconnected, this, &ChatServer::onDisconnected);
+        connect(info.socket, &QTcpSocket::readyRead, this, &ChatServer::onReadyRead);
+        connect(info.socket, &QTcpSocket::disconnected, this, &ChatServer::onDisconnected);
 
         qDebug() << "New client connected: " << socketDescriptor;
     } else {
@@ -250,14 +252,6 @@ void ChatServer::sendMessageToClient(QTcpSocket *client, const QString &message)
 {
     client->write(message.toUtf8() + "\n");
 }
-void ChatServer::broadcastMessage(const QString &message, QTcpSocket *excludeClient)
-{
-    foreach(QTcpSocket *client, clients.keys()) {
-        if(client != excludeClient && clients[client].username != "Unknown") {
-            sendMessageToClient(client, message);
-        }
-    }
-}
 
 void ChatServer::sendClientList()
 {
@@ -286,6 +280,15 @@ void ChatServer::sendClientList()
     QJsonDocument doc(obj);
     QString msg = QString::fromUtf8(doc.toJson(QJsonDocument::Compact));
     broadcastMessage(msg);
+}
+
+void ChatServer::broadcastMessage(const QString &message, QTcpSocket *excludeClient)
+{
+    foreach(QTcpSocket *client, clients.keys()) {
+        if(client != excludeClient && clients[client].username != "Unknown") {
+            sendMessageToClient(client, message);
+        }
+    }
 }
 
 void ChatServer::sendChatHistory(QTcpSocket *client, const QString &withUser)

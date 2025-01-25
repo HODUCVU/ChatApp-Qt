@@ -82,3 +82,9 @@
 523	3870	1736230909957952393	CMakeFiles/ChatServer.dir/ChatServer_autogen/mocs_compilation.cpp.o	75724639b36d2a62
 524	4794	1736230909959952621	CMakeFiles/ChatServer.dir/server.cpp.o	8c622f22c34b1ab1
 4794	5091	1736230914229440424	ChatServer	e00484dfce95bb8f
+7	38	1736233190221698976	ChatServer_autogen/timestamp	3b3f0dfcbae852e7
+7	38	1736233190221698976	ChatServer_autogen/mocs_compilation.cpp	3b3f0dfcbae852e7
+7	38	1736233190221698976	/home/duc-vu/Documents/QtProjects/ChatServer/build/Desktop_Qt_6_7_3-Debug/ChatServer_autogen/timestamp	3b3f0dfcbae852e7
+7	38	1736233190221698976	/home/duc-vu/Documents/QtProjects/ChatServer/build/Desktop_Qt_6_7_3-Debug/ChatServer_autogen/mocs_compilation.cpp	3b3f0dfcbae852e7
+38	4325	1736233190252699188	CMakeFiles/ChatServer.dir/server.cpp.o	8c622f22c34b1ab1
+4325	4611	1736233194539729234	ChatServer	e00484dfce95bb8f
